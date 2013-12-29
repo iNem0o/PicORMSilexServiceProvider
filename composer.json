@@ -1,0 +1,23 @@
+{
+    "name": "picorm/picormsilexserviceprovider",
+    "type": "library",
+    "description": "Silex service provider for PicORM",
+    "keywords": ["orm","silex","seviceprovider","picorm"],
+    "homepage": "https://github.com/iNem0o/PicORM",
+    "license": "LGPL",
+    "authors": [
+        {
+            "name": "inem0o",
+            "email": "contact@inem0o.fr",
+            "homepage": "https://github.com/iNem0o"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "PicORM": "src/"
+        }
+    }
+}
