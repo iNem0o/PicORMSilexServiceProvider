@@ -1,5 +1,5 @@
 # PicORM Silex ServiceProvider
-Combine PicORM and Silex
+Combine PicORM and Silex to quickly build powerful application
 
 ## Usage
 Registering the provider give you full access to PicORM but let you access to a PDO instance in ``$app['db']`` too.
