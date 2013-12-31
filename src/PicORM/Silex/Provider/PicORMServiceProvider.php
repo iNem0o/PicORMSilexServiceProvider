@@ -19,7 +19,7 @@ class PicORMServiceProvider implements ServiceProviderInterface
     public function register(Application $app)
     {
         $app['db'] = $app->share(function () use ($app) {
-            return new \PDO('mysql:dbname=' . $app['picorm.database'] . ';host=' . $app['picorm.server'], $app['picorm.username'], $app['picorm.password']);
+            return new \PDO('mysql:dbname=' . $app['picorm.database'] . ';host=' . $app['picorm.server'], $app['picorm.username'], $app['picorm.password'],array(\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
         });
     }
 
